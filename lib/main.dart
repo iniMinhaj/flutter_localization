@@ -10,9 +10,9 @@ void main() async {
   await GetStorage.init();
 
   if (box.read('lang') != null) {
-    langValue = Locale(box.read('lang'), box.read('langKey'));
+    langValue = Locale(box.read('lang'), null);
   } else {
-    langValue = const Locale('en', 'US');
+    langValue = const Locale('en', null);
   }
   runApp(const MyApp());
 }

@@ -24,15 +24,15 @@ class HomeScreen extends StatelessWidget {
               ElevatedButton(
                   onPressed: () {
                     box.write("lang", "en");
-                    box.write("key", "US");
-                    Get.updateLocale(const Locale('en', "US"));
+                    //  box.write("key", "US");
+                    Get.updateLocale(const Locale('en', null));
                   },
                   child: const Text("English")),
               ElevatedButton(
                   onPressed: () {
                     box.write("lang", "ar");
-                    box.write("key", "AR");
-                    Get.updateLocale(const Locale("ar", "AR"));
+                    //   box.write("key", "AR");
+                    Get.updateLocale(const Locale("ar", null));
                   },
                   child: const Text("Arabic")),
             ],
